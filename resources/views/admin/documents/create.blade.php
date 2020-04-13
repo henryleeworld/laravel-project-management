@@ -81,6 +81,18 @@
     params: {
       size: 2
     },
+    dictCancelUpload: '取消上傳',
+    dictCancelUploadConfirmation: '你確定要取消上傳嗎？',
+    dictDefaultMessage :
+        '<span><i></i>拖放附件到此處</span> \
+        <span>（或點擊此處）</span><br /> \
+        <i></i>',
+    dictFileTooBig: "檔案大小超過 @{{maxFilesize}} MB。",
+    dictInvalidFileType: '不合法的檔案類型。',
+	dictMaxFilesExceeded: "最多上傳 @{{maxFiles}} 個檔案。",
+    dictRemoveFile: '刪除檔案',
+    dictResponseError: '檔案上傳失敗！',
+    dictUploadCanceled: '上傳已經取消。',
     success: function (file, response) {
       $('form').find('input[name="document_file"]').remove()
       $('form').append('<input type="hidden" name="document_file" value="' + response.name + '">')
