@@ -26,10 +26,10 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/MYAqHHX.png)
+![](https://i.imgur.com/51fHtt1.png)
 > 新增客戶，有時候客戶指的可能不是單一人員，而是某一部門或機構
 
-![](https://i.imgur.com/ObDOjTL.png)
+![](https://i.imgur.com/JF9psht.png)
 > 新增專案，有意義名稱可以讓人更容易理解想表達的概念
 
 ![](https://i.imgur.com/HkVkDWz.png)
