@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ClientStatus extends Model
+class TransactionType extends Model
 {
     use SoftDeletes;
 
-    public $table = 'client_statuses';
+    public $table = 'transaction_types';
 
     protected $dates = [
         'created_at',
@@ -24,8 +24,8 @@ class ClientStatus extends Model
         'deleted_at',
     ];
 
-    public function clients()
+    public function transactions()
     {
-        return $this->hasMany(Client::class, 'status_id', 'id');
+        return $this->hasMany(Transaction::class, 'transaction_type_id', 'id');
     }
 }

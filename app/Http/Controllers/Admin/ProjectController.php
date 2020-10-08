@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Client;
+use App\Models\Client;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyProjectRequest;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
-use App\Project;
-use App\ProjectStatus;
+use App\Models\Project;
+use App\Models\ProjectStatus;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

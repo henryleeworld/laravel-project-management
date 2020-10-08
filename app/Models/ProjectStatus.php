@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Note extends Model
+class ProjectStatus extends Model
 {
     use SoftDeletes;
 
-    public $table = 'notes';
+    public $table = 'project_statuses';
 
     protected $dates = [
         'created_at',
@@ -18,15 +18,14 @@ class Note extends Model
     ];
 
     protected $fillable = [
-        'note_text',
-        'project_id',
+        'name',
         'created_at',
         'updated_at',
         'deleted_at',
     ];
 
-    public function project()
+    public function projects()
     {
-        return $this->belongsTo(Project::class, 'project_id');
+        return $this->hasMany(Project::class, 'status_id', 'id');
     }
 }

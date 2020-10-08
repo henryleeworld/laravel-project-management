@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Currency extends Model
+class Note extends Model
 {
     use SoftDeletes;
 
-    public $table = 'currencies';
+    public $table = 'notes';
 
     protected $dates = [
         'created_at',
@@ -18,16 +18,15 @@ class Currency extends Model
     ];
 
     protected $fillable = [
-        'name',
-        'code',
+        'note_text',
+        'project_id',
         'created_at',
         'updated_at',
         'deleted_at',
-        'main_currency',
     ];
 
-    public function transactions()
+    public function project()
     {
-        return $this->hasMany(Transaction::class, 'currency_id', 'id');
+        return $this->belongsTo(Project::class, 'project_id');
     }
 }

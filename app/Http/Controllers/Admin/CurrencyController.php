@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Currency;
+use App\Models\Currency;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyCurrencyRequest;
 use App\Http\Requests\StoreCurrencyRequest;

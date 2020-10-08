@@ -1,6 +1,6 @@
-# Laravel 7 專案管理
+# Laravel 8 專案管理
 
-策略與科技領域的常態則是依專案收費。選擇這個方法必須擅長估計成本，尤其是達成理想結果所需的時間，一開始就要談清楚最後的產出。Laravel 7 專案管理主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+策略與科技領域的常態則是依專案收費。選擇這個方法必須擅長估計成本，尤其是達成理想結果所需的時間，一開始就要談清楚最後的產出。Laravel 8 專案管理主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -15,6 +15,10 @@ $ composer install
 - 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
+```
+- 執行 __Artisan__ 指令的 __storage:link__ 來建立連結符號，建立一個從 `public/storage` 到 `storage/app/public` 的符號連結。
+```sh
+$ php artisan storage:link
 ```
 - 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
 ```sh

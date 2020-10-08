@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreProjectStatusRequest;
 use App\Http\Requests\UpdateProjectStatusRequest;
 use App\Http\Resources\Admin\ProjectStatusResource;
-use App\ProjectStatus;
+use App\Models\ProjectStatus;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

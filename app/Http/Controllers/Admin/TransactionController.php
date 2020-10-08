@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Currency;
+use App\Models\Currency;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyTransactionRequest;
 use App\Http\Requests\StoreTransactionRequest;
 use App\Http\Requests\UpdateTransactionRequest;
-use App\IncomeSource;
-use App\Project;
-use App\Transaction;
-use App\TransactionType;
+use App\Models\IncomeSource;
+use App\Models\Project;
+use App\Models\Transaction;
+use App\Models\TransactionType;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

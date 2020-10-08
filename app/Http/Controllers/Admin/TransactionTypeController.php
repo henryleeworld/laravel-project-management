@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyTransactionTypeRequest;
 use App\Http\Requests\StoreTransactionTypeRequest;
 use App\Http\Requests\UpdateTransactionTypeRequest;
-use App\TransactionType;
+use App\Models\TransactionType;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;

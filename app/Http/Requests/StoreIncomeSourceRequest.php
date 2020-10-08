@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\IncomeSource;
+use App\Models\IncomeSource;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;

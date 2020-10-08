@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1\Admin;
 
-use App\ClientStatus;
+use App\Models\ClientStatus;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreClientStatusRequest;
 use App\Http\Requests\UpdateClientStatusRequest;

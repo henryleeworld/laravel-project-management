@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class TransactionType extends Model
+class Currency extends Model
 {
     use SoftDeletes;
 
-    public $table = 'transaction_types';
+    public $table = 'currencies';
 
     protected $dates = [
         'created_at',
@@ -19,13 +19,15 @@ class TransactionType extends Model
 
     protected $fillable = [
         'name',
+        'code',
         'created_at',
         'updated_at',
         'deleted_at',
+        'main_currency',
     ];
 
     public function transactions()
     {
-        return $this->hasMany(Transaction::class, 'transaction_type_id', 'id');
+        return $this->hasMany(Transaction::class, 'currency_id', 'id');
     }
 }

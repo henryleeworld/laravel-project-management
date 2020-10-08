@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Client;
-use App\ClientStatus;
+use App\Models\Client;
+use App\Models\ClientStatus;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyClientRequest;
 use App\Http\Requests\StoreClientRequest;

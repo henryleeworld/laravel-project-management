@@ -120,7 +120,7 @@
 
   let languages = {
     'en': 'https://cdn.datatables.net/plug-ins/1.10.20/i18n/English.json',
-    'zh-TW': '../js/plugins/datatables/i18n/Chinese-traditional.json'
+    'zh_TW': '../js/plugins/datatables/i18n/Chinese-traditional.json'
   };
 
   $.extend(true, $.fn.dataTable.Buttons.defaults.dom.button, { className: 'btn' })

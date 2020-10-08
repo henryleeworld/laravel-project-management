@@ -1,15 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ProjectStatus extends Model
+class Permission extends Model
 {
     use SoftDeletes;
 
-    public $table = 'project_statuses';
+    public $table = 'permissions';
 
     protected $dates = [
         'created_at',
@@ -18,14 +18,14 @@ class ProjectStatus extends Model
     ];
 
     protected $fillable = [
-        'name',
+        'title',
         'created_at',
         'updated_at',
         'deleted_at',
     ];
 
-    public function projects()
+    public function roles()
     {
-        return $this->hasMany(Project::class, 'status_id', 'id');
+        return $this->belongsToMany(Role::class);
     }
 }

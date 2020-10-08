@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Currency;
+use App\Models\Currency;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Symfony\Component\HttpFoundation\Response;

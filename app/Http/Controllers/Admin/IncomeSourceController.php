@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyIncomeSourceRequest;
 use App\Http\Requests\StoreIncomeSourceRequest;
 use App\Http\Requests\UpdateIncomeSourceRequest;
-use App\IncomeSource;
+use App\Models\IncomeSource;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
