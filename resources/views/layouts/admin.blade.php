@@ -146,7 +146,7 @@
     buttons: [
       {
         extend: 'copy',
-        className: 'btn-default',
+        className: 'btn-light',
         text: copyButtonTrans,
         exportOptions: {
           columns: ':visible'
@@ -154,7 +154,7 @@
       },
       {
         extend: 'csv',
-        className: 'btn-default',
+        className: 'btn-light',
         text: csvButtonTrans,
         exportOptions: {
           columns: ':visible'
@@ -162,7 +162,7 @@
       },
       {
         extend: 'excel',
-        className: 'btn-default',
+        className: 'btn-light',
         text: excelButtonTrans,
         exportOptions: {
           columns: ':visible'
@@ -170,7 +170,7 @@
       },
       {
         extend: 'pdf',
-        className: 'btn-default',
+        className: 'btn-light',
         text: pdfButtonTrans,
         exportOptions: {
           columns: ':visible'
@@ -178,7 +178,7 @@
       },
       {
         extend: 'print',
-        className: 'btn-default',
+        className: 'btn-light',
         text: printButtonTrans,
         exportOptions: {
           columns: ':visible'
@@ -186,7 +186,7 @@
       },
       {
         extend: 'colvis',
-        className: 'btn-default',
+        className: 'btn-light',
         text: colvisButtonTrans,
         exportOptions: {
           columns: ':visible'
